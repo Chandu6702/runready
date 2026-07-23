@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+
+.env
+.env.local
+*.local.yml
+application-local.yml
+
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

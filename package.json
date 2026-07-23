@@ -1,0 +1,48 @@
+{
+  "name": "runready",
+  "version": "0.1.0",
+  "description": "Know what a repository needs before you run it — required config, services, runtimes, and secrets that shouldn't be committed.",
+  "keywords": [
+    "cli",
+    "developer-tools",
+    "environment-variables",
+    "dotenv",
+    "onboarding",
+    "secrets"
+  ],
+  "license": "MIT",
+  "author": "Uma Chandra Sekhara Sarma Thadepalli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chandu6702/runready"
+  },
+  "type": "module",
+  "bin": {
+    "runready": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2",
+    "picocolors": "^1.1.1",
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
