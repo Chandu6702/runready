@@ -106,6 +106,12 @@ Tests build throwaway repositories in a temp directory rather than committing
 fixture files, so this repository never contains anything that looks like a
 leaked credential.
 
+## Publishing
+
+Not on the npm registry yet — [PUBLISHING.md](PUBLISHING.md) is the
+checklist for when that day comes (the package.json is already wired
+for it).
+
 ## License
 
 [MIT](LICENSE)
